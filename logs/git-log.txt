@@ -1,0 +1,7 @@
+f71100e dockerize backend, add root setup readme
+28c54c0 feat: split frontend/backend and refactor React app structure
+e845f84 added swagger docs and postman collection
+4c23d61 implemented task crud endpoint
+26e9a14 add role based and authorization middleware
+32bc52f add registration login jwt endpoint
+a67b789 feat: initialize backend with prisma neon schema and base server
