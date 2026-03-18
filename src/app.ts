@@ -1,6 +1,7 @@
 import express from "express";
 import healthRouter from "./routes/health.route";
 import authRouter from "./modules/auth/auth.route";
+import userRouter from "./modules/users/user.route";
 
 const app = express();
 
@@ -8,6 +9,7 @@ app.use(express.json());
 
 app.use("/api/v1", healthRouter);
 app.use("/api/v1/auth", authRouter);
+app.use("/api/v1/users", userRouter);
 
 app.use((_req, res) => {
     res.status(404).json({
