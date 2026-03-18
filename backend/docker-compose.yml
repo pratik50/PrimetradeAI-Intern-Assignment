@@ -1,0 +1,11 @@
+services:
+  backend:
+    build: .
+    container_name: anythingio-backend
+    restart: unless-stopped
+    env_file:
+      - .env
+    ports:
+      - "4000:4000"
+    environment:
+      NODE_ENV: production
